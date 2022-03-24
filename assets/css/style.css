@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+li {
+    /* faz com que os elementos da tag <li> flutuem um ao lado do outro */
+    float: left;
+}
+
+a {
+    /* display: block; permite especificar o padding (e height, width, margins) */
+    display: block;
+    /* especificando o padding entre a tag <a> para deixar com uma aparência melhor */
+    padding: 8px;
+    /* definindo a cor de fundo */
+    background-color: rgb(136, 187, 218);
+}
+
+ul {
+    /* removendo os marcadores da lista não ordenada */
+    list-style-type: none;
+}
