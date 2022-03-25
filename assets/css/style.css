@@ -1,4 +1,6 @@
 body {
+    display: block;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
@@ -9,13 +11,13 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: burlywood;
 }
 
 
 li {
     /* faz com que os elementos da tag <li> flutuem um ao lado do outro */
-    float: left;
+    float: right;
 }
 
 li a {
@@ -24,7 +26,7 @@ li a {
     color: #9D33B5;
     text-align: center;
     /* especificando o padding entre a tag <a> para deixar com uma aparência melhor */
-    padding: 14px 16px;
+    padding: 20px 50px;
     text-decoration: none;
 }
 
@@ -40,6 +42,18 @@ li a:hover:not(.active) {
 .logo {
     color: #9D33B5;
     /* especificando o padding entre a tag <a> para deixar com uma aparência melhor */
-    padding: 14px 16px;
+    padding: 20px 40px;
     font-weight: bold;
+    /* faz com que o elemento na classe logo flutue no lado esquerdo */
+    float: left;
+}
+
+.left{
+    float: left;
+    width: 50%;
+}
+
+.right{
+    float: right;
+    width: 50%;
 }
