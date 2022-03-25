@@ -3,21 +3,43 @@ body {
     font-size: 15px;
 }
 
+ul {
+    /* removendo os marcadores da lista não ordenada */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+
 li {
     /* faz com que os elementos da tag <li> flutuem um ao lado do outro */
     float: left;
 }
 
-a {
+li a {
     /* display: block; permite especificar o padding (e height, width, margins) */
     display: block;
+    color: #9D33B5;
+    text-align: center;
     /* especificando o padding entre a tag <a> para deixar com uma aparência melhor */
-    padding: 8px;
-    /* definindo a cor de fundo */
-    background-color: rgb(136, 187, 218);
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-ul {
-    /* removendo os marcadores da lista não ordenada */
-    list-style-type: none;
+li a:hover:not(.active) {
+    color: #592097;
+}
+
+.active {
+    color: #B853c6;
+    font-weight: bold;
+}
+
+.logo {
+    color: #9D33B5;
+    /* especificando o padding entre a tag <a> para deixar com uma aparência melhor */
+    padding: 14px 16px;
+    font-weight: bold;
 }
