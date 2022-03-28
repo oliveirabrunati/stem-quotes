@@ -101,6 +101,10 @@ li a:hover:not(.active) {
     position:absolute;
 }
 
+#tapImagem: :checked ~ .conteudo-interno{
+    padding: 0;
+    transition: .1s ease-in;
+}
 
 .conteudo-interno .imagem {
     height: 380px;
@@ -110,6 +114,14 @@ li a:hover:not(.active) {
     /* align-items: left; */
     border-radius: 5px;
     box-shadow: 2px 3px 15px rgba(252, 56, 56, .2);
+}
+
+#tapImagem:checked ~ .conteudo-interno .imagem{
+    height: 370px;
+    width: 850px;
+    z-index: 99;
+    margin-top: 10px;
+    text-replace: .3s .2s ease-in;
 }
 
 .imagem img {
