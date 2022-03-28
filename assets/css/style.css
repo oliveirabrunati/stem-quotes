@@ -45,7 +45,7 @@ li a:hover:not(.active) {
 .logo {
     color: #9D33B5;
     /* especificando o padding entre a tag <a> para deixar com uma aparência melhor */
-    padding: 20px 40px;
+    padding: 20px 50px;
     font-weight: bold;
     /* faz com que o elemento na classe logo flutue no lado esquerdo */
     float: left;
@@ -78,7 +78,7 @@ li a:hover:not(.active) {
 
 .blog-card {
     position: absolute;
-    height: 370px;
+    height: 450px;
     width: 100%;
     /* max-width: 850px; */
     margin: auto;
@@ -91,16 +91,17 @@ li a:hover:not(.active) {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 25px;
-    height: 360px;
+    padding: 60px 10px;
+    height: 450px;
 }
 
 
 .conteudo-interno .imagem {
-    height: 260px;
-    width: 260px;
+    height: 400px;
+    width: 600px;
     overflow: hidden;
     flex-shrink: 0;
+    /* align-items: left; */
     border-radius: 5px;
     box-shadow: 2px 3px 15px rgba(252, 56, 56, .3);
 }
@@ -113,32 +114,32 @@ li a:hover:not(.active) {
 }
 
 .conteudo {
-    padding: 0 20px 0 35px;
+    padding: 0 0px 0 50px;
     width: 530px;
-    margin-left: 50px;
+    /* margin-left: 30px; */
 }
 
 .conteudo span {
     display: block;
     color: #7b7992;
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: bold;
 }
 
 .conteudo .titulo {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     color: #9D33B5;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .conteudo .texto {
-    font-size: 19px;
+    font-size: 18px;
     color: #4e4a67;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     line-height: 1.5em;
-    text-align: justify;
+    text-align: left;
 }
 
 .conteudo button {
@@ -163,7 +164,7 @@ li a:hover:not(.active) {
 
 .sliders{
     position: absolute;
-    bottom: 10px;
+    bottom: 35px;
     left: 47%;
     transform: translateX(-50%);
 }
@@ -185,13 +186,14 @@ li a:hover:not(.active) {
     top: 0;
     left: 0;
     height: 10px;
-    width: 50px;
+    width: 10px;
     background: #9D33B5;
     border-radius: 50%;
-    transform: scaleX(0);
-    transition: transform .6s;
+    /* transform: scaleX(0); */
+    /* transition: transform .6s; */
 }
 
 .sliders .tap:hover:before{
-    transform: scaleX(1);
+    /* transform: scaleX(1); */
+    background: black;
 }
