@@ -116,13 +116,13 @@ li a:hover:not(.active) {
     box-shadow: 2px 3px 15px rgba(252, 56, 56, .2);
 }
 
-#tapImagem:checked ~ .conteudo-interno .imagem{
+/* #tapImagem:checked ~ .conteudo-interno .imagem{
     height: 370px;
     width: 850px;
     z-index: 99;
     margin-top: 10px;
-    text-replace: .3s .2s ease-in;
-}
+    transition: .3s .2s ease-in;
+} */
 
 .imagem img {
     height: 100%;
@@ -147,6 +147,10 @@ transition-delay: .2s;
     opacity: 0;
     transition: .6s;
 }
+
+/* #tapImagem: :checked ~ .conteudo-interno .conteudo{
+display:none;
+} */
 
 #tap-1:checked ~ .conteudo-interno .conteudo-1,
 #tap-2:checked ~ .conteudo-interno .conteudo-2,
@@ -246,5 +250,4 @@ width: 100%;
 
 input{
     display:none;
-    
 }
