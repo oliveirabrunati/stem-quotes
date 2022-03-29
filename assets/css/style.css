@@ -2,7 +2,7 @@ body {
     display: block;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     background: white;
 }
 
@@ -94,7 +94,7 @@ li a:hover:not(.active) {
     overflow: hidden;
     flex-shrink: 0;
     border-radius: 5px;
-    box-shadow: 2px 3px 15px rgba(252, 56, 56, .2);
+    /* box-shadow: 2px 3px 15px rgba(107, 104, 104, 0.2); */
 }
 
 .imagem img {
