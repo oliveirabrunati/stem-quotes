@@ -232,7 +232,35 @@ width: 100%;
     background: white;
 }
 
-label {
+.barraPesquisa .container{
+    width: 100%;
+    position: relative;
+    /* height: 50px; */
+}
+
+.barraPesquisa label{
+    display: block;
+}
+
+.barraPesquisa input{
+    width: 100%;
+}
+
+.barraPesquisa input, button{
+    padding: 10px;
+}
+
+.barraPesquisa button{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: none;
+    border:none;
+}
+
+
+
+/* label {
     display: block;
 }
   
@@ -243,7 +271,7 @@ input, button {
 input {
     width: 50%;
     border: 1px solid #c0b3c1;
-}
+} */
   
     
 .bloco2{
