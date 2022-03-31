@@ -224,10 +224,25 @@ width: 100%;
 
 /* barra de pesquisa */
 
-label {display: block;}
-  input, button {padding: 10px;}
-  input {width: 50%;}
+.barraPesquisa{
+    height: 80px;
+    width: 100%;
+    margin: auto;
+    padding: 30px 60px;
+    background: white;
+}
 
+label {
+    display: block;
+}
+  input, button {
+      padding: 10px;
+    }
+  input {
+      width: 50%;
+      border: 1px solid #c0b3c1;
+    }
+  
   
 .bloco2{
     height: 680px;
@@ -249,7 +264,7 @@ label {display: block;}
     display: grid;
     grid-template-rows: max-content 130px 1fr;
     margin-right: 30px;
-    border: 1px solid gray;
+    border: 1px solid #c0b3c1;
 }
 
 .card img{
@@ -272,7 +287,7 @@ label {display: block;}
     display: flex;
     align-items: center;
     height: 70px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #c0b3c1;
 }
 
 .conteudoCard{
