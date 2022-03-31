@@ -223,8 +223,6 @@ input{
 
   
 .bloco2{
-    /* position: absolute; */
-    /* clear:both; */
     height: 600px;
     width: 100%;
     margin: auto;
@@ -280,6 +278,22 @@ input{
     align-items: center;
     height: 70px;
     padding: 20px;
+}
+
+.fas{
+    cursor: pointer;
+}
+
+.gostei{
+    color: red;
+}
+
+.icones{
+    /* display: flex; */
+    /* flex-direction: row; */
+    text-align: right;
+    background-color: white;
+    width: 240px;
 }
 
 /* Seção 3 */
