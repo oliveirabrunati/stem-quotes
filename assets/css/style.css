@@ -218,8 +218,7 @@ transition-delay: .2s;
 transform: scaleX(1);
 width: 100%;
 }
-
-input{
+.blog-card input{
     display:none;
 }
 
@@ -231,7 +230,7 @@ label {display: block;}
 
   
 .bloco2{
-    height: 800px;
+    height: 680px;
     width: 100%;
     margin: auto;
     padding: 50px 60px;
