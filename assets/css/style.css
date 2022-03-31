@@ -235,23 +235,33 @@ width: 100%;
 label {
     display: block;
 }
-  input, button {
-      padding: 10px;
-    }
-  input {
-      width: 50%;
-      border: 1px solid #c0b3c1;
-    }
   
+input, button {
+    padding: 10px;
+}
+
+input {
+    width: 50%;
+    border: 1px solid #c0b3c1;
+}
   
+    
 .bloco2{
-    height: 680px;
+    height: 750px;
     width: 100%;
     margin: auto;
     padding: 50px 60px;
     background: white;
 }
-
+    
+.bloco2 a{
+    text-decoration: none;
+    font-weight: 900;
+}
+    
+.bloco2 a:hover{
+    color: #ab47bc;
+}
 /* cards citações */
 
 .cards{
@@ -312,12 +322,17 @@ label {
 }
 
 .icones{
-    /* display: flex; */
-    /* flex-direction: row; */
     text-align: right;
     background-color: white;
     width: 240px;
 }
+
+.maisConteudo{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
 
 /* Seção 3 */
 
