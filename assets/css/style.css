@@ -149,6 +149,7 @@ transition-delay: .2s;
     color: #4e4a67;
     margin-bottom: 15px;
     line-height: 1.5em;
+    letter-spacing: 1px;
     text-align: left;
 }
 
@@ -217,7 +218,6 @@ input{
     display:none;
 }
 
-
 /* barra de pesquisa */
 
 
@@ -271,6 +271,7 @@ input{
 .conteudoCard{
     padding: 20px;
     height: 130px;
+    letter-spacing: 1px;
 }
 
 .card .rodapeCard {
@@ -300,22 +301,26 @@ input{
 
 
 .bloco3{
-    height: 300px;
+    height: 280px;
     width: 100%;
     margin: auto;
-    padding: 40px 80px;
+    padding: 50px 80px;
     background: #7828A5;
     /* cor do texto */
     color: #ffffff;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.8em;
 }
 
 .bloco3 .titulo{
     font-size: 25px;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.bloco3 p{
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 1.8em;
+    text-align: center;
 }
 
 /* Estilizando o Rodapé */
