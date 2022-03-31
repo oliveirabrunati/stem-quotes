@@ -107,7 +107,8 @@ li a:hover:not(.active) {
 #tap-1:checked ~ .conteudo-interno .imagem-1,
 #tap-2:checked ~ .conteudo-interno .imagem-2,
 #tap-3:checked ~ .conteudo-interno .imagem-3,
-#tap-4:checked ~ .conteudo-interno .imagem-4{
+#tap-4:checked ~ .conteudo-interno .imagem-4,
+#tap-5:checked ~ .conteudo-interno .imagem-5{
 opacity: 1;
 transition-delay: .2s;
 }
@@ -122,7 +123,8 @@ transition-delay: .2s;
 #tap-1:checked ~ .conteudo-interno .conteudo-1,
 #tap-2:checked ~ .conteudo-interno .conteudo-2,
 #tap-3:checked ~ .conteudo-interno .conteudo-3,
-#tap-4:checked ~ .conteudo-interno .conteudo-4{
+#tap-4:checked ~ .conteudo-interno .conteudo-4,
+#tap-5:checked ~ .conteudo-interno .conteudo-5{
     opacity: 1;
     margin-left: 0px;
     z-index: 100;
@@ -163,22 +165,21 @@ transition-delay: .2s;
     font-weight: 600;
     letter-spacing: 1px;
     border-radius: 5px;
-    border: 1px solid #9D33B5;
     cursor: pointer;
     background: : linear-gradient();
     background: #9D33B5;
 }
 
 .conteudo button:hover {
-    background: #7b7992;
+    background: #df78ef;
 }
 
 .sliders{
     position: absolute;
     bottom: 140px;
-    left: 52%;
+    left: 53%;
     z-index: 100;
-    transform: translateX(-50%);
+    transform: translateX(-55%);
 }
 
 .sliders .tap{
@@ -206,13 +207,14 @@ transition-delay: .2s;
 }
 
 .sliders .tap:hover{
-    background: #790e8b;
+    background: black;
 }
 
 #tap-1:checked ~ .sliders .tap-1:before,
 #tap-2:checked ~ .sliders .tap-2:before,
 #tap-3:checked ~ .sliders .tap-3:before,
-#tap-4:checked ~ .sliders .tap-4:before{
+#tap-4:checked ~ .sliders .tap-4:before,
+#tap-5:checked ~ .sliders .tap-5:before{
 transform: scaleX(1);
 width: 100%;
 }
@@ -304,7 +306,6 @@ label {display: block;}
 }
 
 /* Seção 3 */
-
 
 .bloco3{
     height: 280px;
