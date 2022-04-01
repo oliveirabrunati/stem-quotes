@@ -232,7 +232,6 @@ width: 100%;
 .barraPesquisa .container{
     width: 100%;
     position: relative;
-    /* height: 80px; */
 }
 
 .barraPesquisa label{
@@ -247,7 +246,7 @@ width: 100%;
 }
 
 .barraPesquisa input, button{
-    padding: 10px;
+    padding-left: 20px;
 }
 
 #pesquisar::-webkit-input-placeholder{
