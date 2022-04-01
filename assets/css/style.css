@@ -256,10 +256,7 @@ width: 100%;
     left: 0;
     background: none;
     border:none;
-}
-
-.barraPesquisa .fas{
-    font-size: 25px;
+    font-size: 35px;
 }
     
 .bloco2{
@@ -331,6 +328,8 @@ width: 100%;
 
 .fas{
     cursor: pointer;
+    /* padding-right: 5px; */
+    /* padding: 10px; */
 }
 
 .gostei{
@@ -341,6 +340,7 @@ width: 100%;
     text-align: right;
     background-color: white;
     width: 240px;
+    padding: auto;
 }
 
 .maisConteudo{
