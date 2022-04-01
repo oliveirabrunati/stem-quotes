@@ -250,6 +250,12 @@ width: 100%;
     padding: 10px;
 }
 
+#pesquisar::-webkit-input-placeholder{
+    padding-left: 35px;
+    color: #c0b3c1;
+    font-size: medium;
+}
+
 .barraPesquisa button{
     position: absolute;
     top:0;
@@ -344,9 +350,9 @@ width: 100%;
 }
 
 .maisConteudo{
-    width: 100%;
-    margin: auto;
-    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    /* text-align: center; */
 }
 
 /* Seção 3 */
