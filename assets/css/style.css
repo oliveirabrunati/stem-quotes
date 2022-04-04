@@ -302,6 +302,7 @@ width: 100%;
     grid-template-rows: max-content 130px 1fr;
     margin-right: 30px;
     border: 1px solid #c0b3c1;
+    border-radius: 5px;
 }
 
 .card img{
