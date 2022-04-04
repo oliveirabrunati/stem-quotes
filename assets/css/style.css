@@ -132,7 +132,8 @@ transition-delay: .2s;
 
 .conteudo span {
     display: block;
-    color: #7b7992;
+    color: black;
+    opacity: 80%;
     margin-bottom: 15px;
     font-size: 15px;
     font-weight: bold;
@@ -147,7 +148,7 @@ transition-delay: .2s;
 
 .conteudo .texto {
     font-size: 20px;
-    color: #4e4a67;
+    color: black;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 1.5em;
@@ -275,6 +276,7 @@ width: 100%;
 .bloco2 a{
     text-decoration: none;
     font-weight: 900;
+    color: black;
 }
     
 .bloco2 a:hover{
