@@ -4,56 +4,27 @@ botaoGostei.addEventListener('click', function () {
     botaoGostei.classList.toggle('gostei');
 });
 
-const container = document.getElementById('card');
+// cards
 
-const conteudo = [
-    {
-        image: '../img/grace-hopper.jpg',
-        title: 'Título 1',
-        content: 'super content 1',
-    },
-    {
-        image: '../img/grace-hopper.jpg',
-        title: 'Título 2',
-        content: 'super content 2',
-    },
-    {
-        image: '../img/grace-hopper.jpg',
-        title: 'Título 3',
-        content: 'super content 3',
-    },
-]
+// busca o elemento pai
+let elementoPai = document.getElementById('listaCards');
+// cria o elemento li
+let lista = document.createElement('li');
+// cria o nó de texto
+let texto = document.createTextNode("testando");
+// insere o nó de texto no elemento li
+lista.appendChild(texto);
+// insere o elemento filho no elemento pai
+elementoPai.appendChild(lista);
 
-conteudo.map(card => {
-    let cardDiv = document.createElement('div');
 
-    cardDiv.innerHTML = `        
-            <div class="cabecalho">
-                <img src="${card.image}"/>
-            </div>
-            <div class="conteudoCard">
-                <h4>${card.title}</h4>
-                <p>${card.content}</p>
-            </div>
-            <button class="info-button">+ info</button> `
-            
-    document.getElementsByClassName('cards')[0].appendChild(cardDiv);
-})
 
-   
-/*    let cardHTML = '';
-   conteudo.map(element => {
-        cardHTML += '<div> \
-        <div class="cabecalho"> \
-         <img src="'+element.image+'"/> \
-        </div> \
-        <div class="conteudoCard"> \
-           <h4>'+element.title+'</h4> \
-         <p>'+element.content+'</p> \
-        </div> \
-        <button class="fas fa-solid fa-heart">+ info</button> \
-      </div> \
-      ';
-   });
-   
-document.getElementsByClassName('card')[0].innerHTML = cardHTML; */
+let elementoPaiDois = document.getElementById('containerCard');
+let divCard = document.createElement('div');
+let imagem = document.createElement('img');
+let cabecalhoCard = document.createElement('header');
+let titulo = document.createElement('h1');
+let texto = document.createTextNode("novo teste");
+
+
+cabecalhoCard.appendChild(imagem);
