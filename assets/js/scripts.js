@@ -6,25 +6,7 @@ botaoGostei.addEventListener('click', function () {
 
 // cards
 
-let array = [
-    {
-      nome: "Grace Hopper",
-      cargo: "Analista de Sistemas",
-      citacao: "Para mim programação é mais do que uma arte prática importante. É também um empreendimento gigantesco nos fundamentos do conhecimento.",
-    },
-    {
-        nome: "Bill Gates",
-        cargo: "Fundador da Microsoft",
-        citacao: "É genial festejar o sucesso, mas é mais importante aprender com as lições do fracasso.",
-    }
-    ];
 
-let citacao = {
-    imagem: "img/grace-hopper.jpg",
-    nome: "Grace Hopper",
-    cargo: "Analista de Sistemas",
-    citacao: "Para mim programação é mais do que uma arte prática importante. É também um empreendimento gigantesco nos fundamentos do conhecimento.",
-};
 
 // // busca o elemento pai
 // let elementoPai = document.getElementById('listaCards');
@@ -39,10 +21,30 @@ let citacao = {
 
 
 
+let listaCitacoes = [
+    {
+        nome: "Grace Hopper",
+        cargo: "Analista de Sistemas",
+        citacao: "Para mim programação é mais do que uma arte prática importante. É também um empreendimento gigantesco nos fundamentos do conhecimento.",
+    },
+    {
+        nome: "Bill Gates",
+        cargo: "Fundador da Microsoft",
+        citacao: "É genial festejar o sucesso, mas é mais importante aprender com as lições do fracasso.",
+    }
+];
 
 
+let citacao = {
+    imagem: "img/steve-jobs.jpg",
+    nome: "Steve Jobs",
+    cargo: "Fundador da Apple Inc.",
+    frase: "Tenha coragem de seguir o que seu coração e sua intuição dizem. Eles já sabem o que você realmente deseja. Todo resto é secundário.",
+    link: "Biografia",
+};
 
-function criarCard(){    
+function criarCard(citacao) {
+
 
     let grupoCards = document.getElementsByClassName("cards")[0];
     let artigo = document.createElement("article");
@@ -51,29 +53,29 @@ function criarCard(){
     divCabecalho.className = "cabecalho";
     // cria a tag img e adiciona a imagem
     let imagem = document.createElement("img");
-    imagem.src = "img/steve-jobs.jpg";
+    imagem.src = citacao.imagem;
     // cria a tag header
     let hearderCard = document.createElement("header");
     // cria a tag h2 e adiciona o nome do autor
     let tituloCard = document.createElement("h2");
     tituloCard.className = "titulo";
-    let textoTituloCard = document.createTextNode("Steve Jobs");
+    let textoTituloCard = document.createTextNode(citacao.nome);
     // cria a tag span e adiciona o cargo do autor
     let tagSpan = document.createElement("span");
-    let textoSpan = document.createTextNode("Fundador da Apple Inc.");
+    let textoSpan = document.createTextNode(citacao.cargo);
 
     // cria o corpo
     let divCorpo = document.createElement("div");
     divCorpo.className = "conteudoCard";
     // cria a tag paragráfo
     let paragrafoCard = document.createElement("p");
-    let conteudoParagrafo = document.createTextNode("Tenha coragem de seguir o que seu coração e sua intuição dizem. Eles já sabem o que você realmente deseja. Todo resto é secundário.");
+    let conteudoParagrafo = document.createTextNode(citacao.frase);
 
     // cria o rodape
     let divRodape = document.createElement("footer");
     divRodape.className = "rodapeCard";
     let linkBiografia = document.createElement("a");
-    let textoLink = document.createTextNode("Biografia");
+    let textoLink = document.createTextNode(citacao.link);
     // criando icones rodape
     let divSocial = document.createElement("div");
     divSocial.className = "icones";
@@ -81,8 +83,8 @@ function criarCard(){
     iconeCurtir.className = "fas fa-solid fa-heart";
     let iconeCompartilhar = document.createElement("i");
     iconeCompartilhar.className = "fas fa-solid fa-share";
-    
-    
+
+
     divCabecalho.appendChild(imagem);
     divCabecalho.appendChild(hearderCard);
     hearderCard.appendChild(tituloCard);
@@ -91,7 +93,7 @@ function criarCard(){
     tagSpan.appendChild(textoSpan);
     artigo.appendChild(divCabecalho);
     grupoCards.appendChild(artigo);
-    
+
     artigo.appendChild(divCorpo);
     divCorpo.appendChild(paragrafoCard);
     paragrafoCard.appendChild(conteudoParagrafo);
@@ -105,4 +107,4 @@ function criarCard(){
     divSocial.appendChild(iconeCompartilhar);
 }
 
-criarCard();
+criarCard(citacao);
