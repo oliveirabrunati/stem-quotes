@@ -21,18 +21,6 @@ botaoGostei.addEventListener('click', function () {
 
 
 
-let listaCitacoes = [
-    {
-        nome: "Grace Hopper",
-        cargo: "Analista de Sistemas",
-        citacao: "Para mim programação é mais do que uma arte prática importante. É também um empreendimento gigantesco nos fundamentos do conhecimento.",
-    },
-    {
-        nome: "Bill Gates",
-        cargo: "Fundador da Microsoft",
-        citacao: "É genial festejar o sucesso, mas é mais importante aprender com as lições do fracasso.",
-    }
-];
 
 
 let citacao = {
@@ -43,8 +31,28 @@ let citacao = {
     link: "Biografia",
 };
 
-function criarCard(citacao) {
 
+// Criar um laço e passar as citações uma a uma
+
+let listaCitacoes = [
+    {
+        imagem: "img/grace-hopper.jpg",
+        nome: "Grace Hopper",
+        cargo: "Analista de Sistemas",
+        frase: "Para mim programação é mais do que uma arte prática importante. É também um empreendimento gigantesco nos fundamentos do conhecimento.",
+        link: "Biografia",
+    },
+    {
+        imagem: "img/steve-jobs.jpg",
+        nome: "Steve Jobs",
+        cargo: "Fundador da Apple Inc.",
+        frase: "Tenha coragem de seguir o que seu coração e sua intuição dizem. Eles já sabem o que você realmente deseja. Todo resto é secundário.",
+        link: "Biografia",
+    }
+];
+
+
+function criarCard(citacao) {
 
     let grupoCards = document.getElementsByClassName("cards")[0];
     let artigo = document.createElement("article");
