@@ -6,31 +6,6 @@ botaoGostei.addEventListener('click', function () {
 
 // cards
 
-
-
-// // busca o elemento pai
-// let elementoPai = document.getElementById('listaCards');
-// // cria o elemento li
-// let lista = document.createElement('li');
-// // cria o nó de texto
-// let texto = document.createTextNode("testando");
-// // insere o nó de texto no elemento li
-// lista.appendChild(texto);
-// // insere o elemento filho no elemento pai
-// elementoPai.appendChild(lista);
-
-
-
-
-
-// let citacao = {
-//     imagem: "img/steve-jobs.jpg",
-//     nome: "Steve Jobs",
-//     cargo: "Fundador da Apple Inc.",
-//     frase: "Tenha coragem de seguir o que seu coração e sua intuição dizem. Eles já sabem o que você realmente deseja. Todo resto é secundário.",
-//     link: "Biografia",
-// };
-
 let listaCitacoes = [
     {
         imagem: "img/grace-hopper.jpg",
@@ -44,6 +19,34 @@ let listaCitacoes = [
         nome: "Steve Jobs",
         cargo: "Fundador da Apple Inc.",
         frase: "Tenha coragem de seguir o que seu coração e sua intuição dizem. Eles já sabem o que você realmente deseja. Todo resto é secundário.",
+        link: "Biografia",
+    },
+    {
+        imagem: "img/bill-gates.jpg",
+        nome: "Bill Gates",
+        cargo: "Fundador da Microsoft",
+        frase: "É genial festejar o sucesso, mas é mais importante aprender com as lições do fracasso.",
+        link: "Biografia",
+    },
+    {
+        imagem: "img/marie-curie.webp",
+        nome: "Marie Curie",
+        cargo: "Física e Química",
+        frase: "Seja menos curioso sobre as pessoas e mais curioso sobre as ideias.",
+        link: "Biografia",
+    },
+    {
+        imagem: "img/mark-zuckerberg.jpg",
+        nome: "Mark Zuckerberg",
+        cargo: "Fundador do Facebook",
+        frase: "Ao dar às pessoas o poder de partilhar, estamos tornando o mundo mais transparente.",
+        link: "Biografia",
+    },
+    {
+        imagem: "img/katherine-johnson.jpeg",
+        nome: "Katherine Johnson",
+        cargo: "Matemática",
+        frase: "Matemática está apenas lá... Ou você está certo ou errado. É disso que eu gosto nela.",
         link: "Biografia",
     }
 ];
@@ -152,5 +155,4 @@ function pesquisar(){
     });
     
     exibirListaCards(listaFiltrada);
-
 }
