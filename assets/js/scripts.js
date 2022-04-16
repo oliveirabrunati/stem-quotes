@@ -112,7 +112,10 @@ function criarCard(citacao) {
 
 }
 
-function exibirListaCards(){
+function exibirListaCards(listaCitacoes){
+
+    let cards = document.querySelector(".cards");
+    cards.innerHTML = "";
 
     for (let posicao = 0; posicao < listaCitacoes.length; posicao++){
     
@@ -121,18 +124,33 @@ function exibirListaCards(){
         criarCard(citacao);
     
     }
+
+    if(listaCitacoes.length == 0){
+
+        resultadoBusca = document.createElement("label");
+        let naoEncontrado = document.createTextNode("Termo não encontrado");
+
+        resultadoBusca.appendChild(naoEncontrado);
+        cards.appendChild(resultadoBusca);
+    }
 }
 
-exibirListaCards();
+exibirListaCards(listaCitacoes);
 
 function pesquisar(){
 
-    let input = document.getElementById("campoPesquisa");
-    let filtro = input.value.toUpperCase();
-    let ul = document.getElementById("lista");
+    let termoBusca = document.getElementById("campoPesquisa").value;
+    
+    let listaFiltrada = listaCitacoes.filter(function (citacao) {
+        
+       if(citacao.nome.toLowerCase().includes(termoBusca.toLowerCase())){
+            return true;
+       }else{
+           return false;
+       }
 
-    for(let indice = 0; indice < listaCitacoes.length; indice++){
-        ul = 
-    }
+    });
+    
+    exibirListaCards(listaFiltrada);
 
 }
