@@ -23,16 +23,13 @@ botaoGostei.addEventListener('click', function () {
 
 
 
-let citacao = {
-    imagem: "img/steve-jobs.jpg",
-    nome: "Steve Jobs",
-    cargo: "Fundador da Apple Inc.",
-    frase: "Tenha coragem de seguir o que seu coração e sua intuição dizem. Eles já sabem o que você realmente deseja. Todo resto é secundário.",
-    link: "Biografia",
-};
-
-
-// Criar um laço e passar as citações uma a uma
+// let citacao = {
+//     imagem: "img/steve-jobs.jpg",
+//     nome: "Steve Jobs",
+//     cargo: "Fundador da Apple Inc.",
+//     frase: "Tenha coragem de seguir o que seu coração e sua intuição dizem. Eles já sabem o que você realmente deseja. Todo resto é secundário.",
+//     link: "Biografia",
+// };
 
 let listaCitacoes = [
     {
@@ -52,73 +49,80 @@ let listaCitacoes = [
 ];
 
 
+
 function criarCard(citacao) {
 
-    for(let posicao = 0; posicao < listaCitacoes.length; posicao++){
+    let grupoCards = document.getElementsByClassName("cards")[0];
+    let artigo = document.createElement("article");
+    artigo.className = "card";
+    let divCabecalho = document.createElement("div");
+    divCabecalho.className = "cabecalho";
+    // cria a tag img e adiciona a imagem
+    let imagem = document.createElement("img");
+    imagem.src = citacao.imagem;
+    // cria a tag header
+    let hearderCard = document.createElement("header");
+    // cria a tag h2 e adiciona o nome do autor
+    let tituloCard = document.createElement("h2");
+    tituloCard.className = "titulo";
+    let textoTituloCard = document.createTextNode(citacao.nome);
+    // cria a tag span e adiciona o cargo do autor
+    let tagSpan = document.createElement("span");
+    let textoSpan = document.createTextNode(citacao.cargo);
 
-        let grupoCards = document.getElementsByClassName("cards")[0];
-        let artigo = document.createElement("article");
-        artigo.className = "card";
-        let divCabecalho = document.createElement("div");
-        divCabecalho.className = "cabecalho";
-        // cria a tag img e adiciona a imagem
-        let imagem = document.createElement("img");
-        imagem.src = citacao.imagem;
-        // cria a tag header
-        let hearderCard = document.createElement("header");
-        // cria a tag h2 e adiciona o nome do autor
-        let tituloCard = document.createElement("h2");
-        tituloCard.className = "titulo";
-        let textoTituloCard = document.createTextNode(citacao.nome);
-        // cria a tag span e adiciona o cargo do autor
-        let tagSpan = document.createElement("span");
-        let textoSpan = document.createTextNode(citacao.cargo);
-    
-        // cria o corpo
-        let divCorpo = document.createElement("div");
-        divCorpo.className = "conteudoCard";
-        // cria a tag paragráfo
-        let paragrafoCard = document.createElement("p");
-        let conteudoParagrafo = document.createTextNode(citacao.frase);
-    
-        // cria o rodape
-        let divRodape = document.createElement("footer");
-        divRodape.className = "rodapeCard";
-        let linkBiografia = document.createElement("a");
-        let textoLink = document.createTextNode(citacao.link);
-        // criando icones rodape
-        let divSocial = document.createElement("div");
-        divSocial.className = "icones";
-        let iconeCurtir = document.createElement("i");
-        iconeCurtir.className = "fas fa-solid fa-heart";
-        let iconeCompartilhar = document.createElement("i");
-        iconeCompartilhar.className = "fas fa-solid fa-share";
-    
-    
-        divCabecalho.appendChild(imagem);
-        divCabecalho.appendChild(hearderCard);
-        hearderCard.appendChild(tituloCard);
-        tituloCard.appendChild(textoTituloCard);
-        hearderCard.appendChild(tagSpan);
-        tagSpan.appendChild(textoSpan);
-        artigo.appendChild(divCabecalho);
-        grupoCards.appendChild(artigo);
-    
-        artigo.appendChild(divCorpo);
-        divCorpo.appendChild(paragrafoCard);
-        paragrafoCard.appendChild(conteudoParagrafo);
-    
-        linkBiografia.appendChild(textoLink);
-        divRodape.appendChild(linkBiografia);
-        artigo.appendChild(divRodape);
-    
-        divRodape.appendChild(divSocial);
-        divSocial.appendChild(iconeCurtir);
-        divSocial.appendChild(iconeCompartilhar);
-        
-    }
-    console.log(listaCitacoes);
+    // cria o corpo
+    let divCorpo = document.createElement("div");
+    divCorpo.className = "conteudoCard";
+    // cria a tag paragráfo
+    let paragrafoCard = document.createElement("p");
+    let conteudoParagrafo = document.createTextNode(citacao.frase);
+
+    // cria o rodape
+    let divRodape = document.createElement("footer");
+    divRodape.className = "rodapeCard";
+    let linkBiografia = document.createElement("a");
+    let textoLink = document.createTextNode(citacao.link);
+    // criando icones rodape
+    let divSocial = document.createElement("div");
+    divSocial.className = "icones";
+    let iconeCurtir = document.createElement("i");
+    iconeCurtir.className = "fas fa-solid fa-heart";
+    let iconeCompartilhar = document.createElement("i");
+    iconeCompartilhar.className = "fas fa-solid fa-share";
+
+
+    divCabecalho.appendChild(imagem);
+    divCabecalho.appendChild(hearderCard);
+    hearderCard.appendChild(tituloCard);
+    tituloCard.appendChild(textoTituloCard);
+    hearderCard.appendChild(tagSpan);
+    tagSpan.appendChild(textoSpan);
+    artigo.appendChild(divCabecalho);
+    grupoCards.appendChild(artigo);
+
+    artigo.appendChild(divCorpo);
+    divCorpo.appendChild(paragrafoCard);
+    paragrafoCard.appendChild(conteudoParagrafo);
+
+    linkBiografia.appendChild(textoLink);
+    divRodape.appendChild(linkBiografia);
+    artigo.appendChild(divRodape);
+
+    divRodape.appendChild(divSocial);
+    divSocial.appendChild(iconeCurtir);
+    divSocial.appendChild(iconeCompartilhar);
+
+    // console.log(listaCitacoes[posicao]);
 
 }
 
-criarCard(citacao);
+for (let posicao = 0; posicao < listaCitacoes.length; posicao++){
+
+    console.log(listaCitacoes[posicao]);
+
+    let citacao = listaCitacoes[posicao];
+
+    criarCard(citacao);
+
+}
+
