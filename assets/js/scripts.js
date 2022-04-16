@@ -48,8 +48,6 @@ let listaCitacoes = [
     }
 ];
 
-
-
 function criarCard(citacao) {
 
     let grupoCards = document.getElementsByClassName("cards")[0];
@@ -112,17 +110,29 @@ function criarCard(citacao) {
     divSocial.appendChild(iconeCurtir);
     divSocial.appendChild(iconeCompartilhar);
 
-    // console.log(listaCitacoes[posicao]);
-
 }
 
-for (let posicao = 0; posicao < listaCitacoes.length; posicao++){
+function exibirListaCards(){
 
-    console.log(listaCitacoes[posicao]);
-
-    let citacao = listaCitacoes[posicao];
-
-    criarCard(citacao);
-
+    for (let posicao = 0; posicao < listaCitacoes.length; posicao++){
+    
+        let citacao = listaCitacoes[posicao];
+    
+        criarCard(citacao);
+    
+    }
 }
 
+exibirListaCards();
+
+function pesquisar(){
+
+    let input = document.getElementById("campoPesquisa");
+    let filtro = input.value.toUpperCase();
+    let ul = document.getElementById("lista");
+
+    for(let indice = 0; indice < listaCitacoes.length; indice++){
+        ul = 
+    }
+
+}
