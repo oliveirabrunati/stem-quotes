@@ -109,9 +109,10 @@
     <div class="barraPesquisa">
 
       <label class="campoPesquisa">
-        <input type="text" required>
+        <input id="campoPesquisa" onkeyup="pesquisar()" type="text" required>
         <span class="placeholder">Digite aqui para pesquisar</span>
         <button type="submit">&telrec;</button>
+        <ul id="lista"></ul>
       </label>
       
     </div>
