@@ -1,10 +1,10 @@
-@media screen (min-width: 700px) {
+@media screen and (max-width: 700px) {
     .bloco2{
-        height: 1000px;
+        height: 100%;
         width: 100%;
     }
-    .conteudoCard p{
-        
+    .bloco3{
+        height: 100%;
     }
 }
 
