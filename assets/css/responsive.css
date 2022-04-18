@@ -5,6 +5,13 @@
     }
     .bloco3{
         height: 100%;
+        padding: 50px;
+    }
+    .conteudoCard{
+        width: 260px;
+    }
+    .card .rodapeCard{
+        width: 260px;
     }
 }
 
